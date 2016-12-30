@@ -1,0 +1,56 @@
+/*   
+Theme Name: Elano
+Description: Elano is a Premium Wordpress Theme with a unique design and fully CMS features. No matter if you use it as a photographer, travel / web design agency, nonprofit / environmental organization or even as a music / video producer. You can easily turn it into your personal website.
+Author: Ux-Qode
+Author URI: http://uxqode.com
+Version: 2.4
+Tags:black,blue,brown,gray,green,orange,pink,purple,red,silver,tan,white,yellow,dark,light,one-column,two-columns,three-columns,four-columns,left-sidebar,right-sidebar,flexible-width,editor-style,featured-images,flexible-header,full-width-template,microformats,post-formats,theme-options,translation-ready
+Theme URI:
+License:
+License URI:
+*/
+
+/*********************************************************************
+* BOOTSTRAP OVERRIDES
+*/
+/**      
+  
+  ELANO Html5 Template		   								 
+  Author: UX-Qode									     
+  Author URI: http://themeforest.net/user/UX-Qode		
+  Version: 1.0
+  
+  ELANO MAIN CSS
+
+  01. GENERAL
+  02. INTRO LOADING
+  03. CURSOR IMAGES
+  04. LOGOS
+  05. SKINS
+  06. NAVIGATION
+  07. SECTIONS
+  08. PARALLAX
+  09. HOME SECTION
+  10. SERVICES
+  11. NUMERICALS
+  12. TESTIMONIALS
+  13. TEAM MEMBERS
+  14. CONTACTS
+  15. GOOGLE MAPS
+  16. TWITTER
+  17. FOOTER
+  18. BUTTONS
+  19. SKILL BARS
+  20. INFO BOXES
+  21. SOCIAL ICONS
+  22. FLEXSLIDER
+  23. ACCORDION
+  24. BLOG
+  	                 		   
+/***************************************************************
+					  01. GENERAL
+***************************************************************/
+
+body {
+	background: red;
+}

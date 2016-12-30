@@ -195,6 +195,7 @@ function elano_load_theme_assets() {
     wp_enqueue_style('googlefont-h6', 'http://fonts.googleapis.com/css?family='.$elano_options['typography-h6']['font-family']);
     }
     // Enqueue all the theme CSS
+
     wp_enqueue_style('bootstrap', get_template_directory_uri().'/assets/css/bootstrap.css');
     wp_enqueue_style('main', get_stylesheet_directory_uri().'/style.css');
     wp_enqueue_style('animate', get_template_directory_uri().'/assets/css/animate.css');
@@ -207,6 +208,7 @@ function elano_load_theme_assets() {
     wp_enqueue_style('nivo_themes', get_template_directory_uri().'/assets/css/nivo_themes/default/default.css');
     wp_enqueue_style('woocm-uxqode', get_template_directory_uri().'/assets/css/woocommerce-ux.css');
     wp_enqueue_style('woo-layout-ux', get_template_directory_uri().'/assets/css/woo-layout-ux.css');
+
     
     // Enqueue Color variation CSS
     if (!empty($elano_options['css_style']) ) :
@@ -215,7 +217,13 @@ function elano_load_theme_assets() {
         wp_enqueue_style('elano-style-css', get_stylesheet_directory_uri().'/assets/css/color-variations/pink.css');
     endif;
 
+    //    add new style custome
+    wp_enqueue_style('customer', get_stylesheet_directory_uri().'/assets/css/customer.css');
+
     wp_enqueue_style('resize', get_template_directory_uri().'/assets/css/resize.css');
+
+
+
 
    
    // Enqueue all the js files of theme
@@ -232,6 +240,7 @@ function elano_load_theme_assets() {
     wp_enqueue_script('SmoothScroll-js', get_template_directory_uri().'/assets/js/SmoothScroll.js', array(), FALSE, TRUE);
     wp_enqueue_script('nivo-lightbox.min-js', get_template_directory_uri().'/assets/js/nivo-lightbox.min.js', array(), FALSE, TRUE);
     wp_enqueue_script('owl.carousel.min-js', get_template_directory_uri().'/assets/js/owl.carousel.min.js', array(), FALSE, TRUE);
+    wp_enqueue_script('customer-js', get_template_directory_uri().'/assets/js/customer.js', array(), FALSE, TRUE);
     
     $inline_css='';
      

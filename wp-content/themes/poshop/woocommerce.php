@@ -7,16 +7,8 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} get_header(); ?>
             <!-- BEGIN BLOG WIDTH | OPTION: "big", "medium" container -->
             <div class="container"> 
                 
-                <!-- BEGIN BLOG POSTS -->       
-                <div class="journal col-xs-12 col-sm-12 col-md-8">
-                 <div id="post-<?php the_ID(); ?>" <?php post_class("journal-post"); ?>>
-                <?php  woocommerce_content(); ?>   
-                </div>
-                </div>
-                <!-- END journal -->
-                
                 <!-- START SIDEBAR -->
-                <div class="col-xs-12 col-sm-12 col-md-4 ">
+                <div class="col-xs-12 col-sm-12 col-md-3 ">
                 <?php
                 if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('elano-widgets-woocommerce-sidebar')) :
                  _e ('add widgets here', 'elano');
@@ -24,6 +16,15 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} get_header(); ?>
                 ?>
                    
                 </div>
+				
+                <!-- BEGIN BLOG POSTS -->       
+                <div class="col-xs-12 col-sm-12 col-md-9">
+                 <div id="post-<?php the_ID(); ?>" <?php post_class("journal-post"); ?>>
+                <?php  woocommerce_content(); ?>   
+                </div>
+                </div>
+                <!-- END journal -->
+                
                 
         
             </div>  
